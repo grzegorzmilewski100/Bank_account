@@ -24,9 +24,6 @@ class Bank(User):
         else:
             print("You have not got enough money to withdraw")
     def show_bank_account(self):
+        self.show_details()
         print(f"Your bank account is: {self.balance}$")
 
-johan = Bank("Johan", 25)
-johan.deposit(250)
-johan.withdraw(350)
-johan.show_bank_account()
